@@ -7,6 +7,7 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let videoBtn = document.querySelectorAll('.vid-btn');
 
+
 window.onscroll = () => {
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
@@ -43,3 +44,24 @@ videoBtn.forEach(btn => {
         document.querySelector('#video-slider').src = src
     });
 });
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+  });
