@@ -262,18 +262,25 @@ header .search-bar-container label:hover {
         border-top: .1rem solid rgba(255,255,55,.2);
         padding: 1rem 2rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
     }
 
     header .navbar.active {
         clip-path: polygon(0 0 , 100% 0, 100% 100%, 0 100%);
     }
 
-    header  .navbar a {
+    header .navbar a {
         display: block;
         border: .5rem;
         padding: 1rem;
         margin: 1rem 0;
         background: #222;
+        text-align: center;
+        letter-spacing: .5rem;
+    }
+
+    header .navbar a:hover {
+        letter-spacing: 1rem;
     }
 }
 
